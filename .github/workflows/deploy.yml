@@ -1,0 +1,15 @@
+name: Deploy Docs
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: cloud
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Run Foxogram frontend
+        run: docker compose up -d --build

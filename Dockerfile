@@ -1,8 +1,7 @@
 FROM busybox:stable
 
-COPY index.html /var/www/html/index.html
+COPY www /var/www/html/
 
-# Write httpd configuration.
 RUN <<EOF cat >> /var/www/httpd.conf
 H:/var/www/html
 I:index.html

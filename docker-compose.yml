@@ -1,5 +1,6 @@
 services:
   foxogram-docs:
+    container_name: foxogram-docs
     build:
       context: .
     restart: always

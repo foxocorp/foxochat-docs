@@ -1,6 +1,7 @@
 # Convert user timestamp to avatar background color
 
 Formula: (`T` - timestamp)
+
 $$
 \begin{align}
 R = (\lfloor T \rfloor \mod 256) \\
@@ -10,6 +11,7 @@ B = (\lfloor \frac{T}{256^2} \rfloor \mod 256)
 $$
 
 Example:
+
 ```js
 const timestampToColor = (timestamp) => ({
   r: timestamp % 256,

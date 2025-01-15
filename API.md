@@ -44,7 +44,7 @@ API Documentation here: https://docs.foxogram.su/
 - `301` - Already exist
 - `302` - Missing permissions
 
-### Message erros
+### Message errors
 - `400` - Not found
 
 ### Code errors (Email verification code)

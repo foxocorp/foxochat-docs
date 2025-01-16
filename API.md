@@ -5,27 +5,39 @@ API Documentation here: https://docs.foxogram.su/
 - `https://api.dev.foxogram.su` - Development
 
 # User types
-- `1` - User
-- `2` - Bot
+
+| Value | Type |
+|-------|------|
+| 1     | USER |
+| 2     | BOT  |
 
 # User flags
-- `1 << 0` (1) - Awaiting confirmation
-- `1 << 1` (2) - Email verified
-- `1 << 2` (4) - Disabled
+
+| Value        | Flag                  | Description                      |
+|--------------|-----------------------|----------------------------------|
+| `1 << 0` (1) | AWAITING_CONFIRMATION | User wait for email confirmation |
+| `1 << 1` (2) | EMAIL_VERIFIED        | User has a verified email        |
+| `1 << 2` (4) | DISABLED              | User disabled                    |
 
 # Channel types
-- `1` - DM
-- `2` - Group
-- `3` - Channel
+
+| Value | Type    | Description                             |
+|-------|---------|-----------------------------------------|
+| `1`   | DM      | a direct message between users          |
+| `2`   | GROUP   | a direct message between multiple users |
+| `3`   | CHANNEL | a channel that users can follow         |
 
 # Member permissions
-- `1 << 0` (1) - Admin
-- `1 << 1` (2) - Ban members
-- `1 << 2` (4) - Kick members
-- `1 << 3` (8) - Manage messages
-- `1 << 4` (16) - Manage channel
-- `1 << 5` (32) - Attach files
-- `1 << 6` (64) - Send messages
+
+| Value         | Permission      | Description                                                       |
+|---------------|-----------------|-------------------------------------------------------------------|
+| `1 << 0` (1)  | ADMIN           | Allows all permissions and bypasses channel permission overwrites |
+| `1 << 1` (2)  | BAN_MEMBERS     | Allows banning members                                            |
+| `1 << 2` (4)  | KICK_MEMBERS    | Allows kicking members                                            |
+| `1 << 3` (8)  | MANAGE_MESSAGES | Allows for deletion of other users messages                       |
+| `1 << 4` (16) | MANAGE_CHANNEL  | Allows management and editing of the channel                      |
+| `1 << 5` (32) | ATTACH_FILES    | Allows for uploading images and files                             |
+| `1 << 6` (64) | SEND_MESSAGES   | Allows for sending messages in a channel                          |
 
 # Error codes
 ### User errors

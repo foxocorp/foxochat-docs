@@ -53,11 +53,14 @@ API Documentation here: https://docs.foxogram.su/
 - `502` - Wait to resend
 
 ### CDN errors
-- `600` - Upload failed
-- `601` - Invalid file format
+- `700` - Upload failed
+- `701` - Invalid file format
 
 ### API errors
-- `700` - Rate limit exceeded
-- `701` - Empty body
-- `702` - Validation error
-- `703` - Route not found
+- `800` - Rate limit exceeded
+- `801` - Empty body
+- `802` - Validation error
+- `803` - Route not found
+
+### Unknown error
+- `900` - Error

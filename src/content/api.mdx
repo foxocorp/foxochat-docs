@@ -1,19 +1,17 @@
 # API
 
-API Documentation here: https://docs.foxogram.su/
-
-# Endpoints
+## Endpoints
 - `https://api.foxogram.su` - Production
 - `https://api.dev.foxogram.su` - Development
 
-# User types
+## User types
 
 | Value | Type |
 |-------|------|
 | 1     | USER |
 | 2     | BOT  |
 
-# User flags
+## User flags
 
 | Value        | Flag                  | Description                      |
 |--------------|-----------------------|----------------------------------|
@@ -21,7 +19,7 @@ API Documentation here: https://docs.foxogram.su/
 | `1 << 1` (2) | EMAIL_VERIFIED        | User has a verified email        |
 | `1 << 2` (4) | DISABLED              | User disabled                    |
 
-# Channel types
+## Channel types
 
 | Value | Type    | Description                             |
 |-------|---------|-----------------------------------------|
@@ -29,7 +27,7 @@ API Documentation here: https://docs.foxogram.su/
 | `2`   | GROUP   | a direct message between multiple users |
 | `3`   | CHANNEL | a channel that users can follow         |
 
-# Member permissions
+## Member permissions
 
 | Value         | Permission      | Description                                                       |
 |---------------|-----------------|-------------------------------------------------------------------|
@@ -41,7 +39,7 @@ API Documentation here: https://docs.foxogram.su/
 | `1 << 5` (32) | ATTACH_FILES    | Allows for uploading images and files                             |
 | `1 << 6` (64) | SEND_MESSAGES   | Allows for sending messages in a channel                          |
 
-# Error codes
+## Error codes
 ### User errors
 - `100` - Not found
 - `101` - Email not verified

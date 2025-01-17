@@ -10,7 +10,6 @@ export const metadata = {
 };
 
 const navbar = <Navbar logo={<b>Foxogram Docs</b>} />
-const footer = <Footer>MIT {new Date().getFullYear()} © FoxoCorp.</Footer>
 
 export default async function RootLayout({ children }) {
     return (
@@ -31,8 +30,12 @@ export default async function RootLayout({ children }) {
         <Layout
             navbar={navbar}
             pageMap={await getPageMap()}
+            darkMode={false}
             docsRepositoryBase="https://github.com/foxocorp/foxogram-docs/tree/main/"
-            footer={footer}
+            footer={<span></span>}
+            editLink={null}
+            feedback={{ content: null }}
+            navigation={false}
         >
             {children}
         </Layout>

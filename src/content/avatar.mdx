@@ -4,20 +4,32 @@
 
 Formula: (`T` - timestamp)
 
-$$
+```math
 \begin{align}
-R = (\lfloor T \rfloor \mod 256) \\
-G = (\lfloor \frac{T}{256} \rfloor \mod 256) \\
-B = (\lfloor \frac{T}{256^2} \rfloor \mod 256)
+H &= (T \mod 360) \\
+S &= 0.2 + ((T \mod 1000) \div 1000) \times 0.4
 \end{align}
-$$
+```
 
-Example:
+Example: (JavaScript)
 
 ```js
-const timestampToColor = (timestamp) => ({
-  r: timestamp % 256,
-  g: Math.floor(timestamp / 256) % 256,
-  b: Math.floor(timestamp / (256 * 256)) % 256
-});
+const timestampToHSV = (timestamp) => {
+  // Step 1: Calculate Hue
+  const h = timestamp % 360; // Hue: 0-360
+
+  // Step 2: Calculate Saturation in the range 20%-60%
+  const s = 0.2 + ((timestamp % 1000) / 1000) * 0.4; // Saturation: 20%-60%
+
+  // Step 3: Set Value to 100%
+  const v = 1; // Value: 100%
+
+  // Return HSV as an object
+  return { h, s, v };
+};
+
+// Example usage
+const timestamp = 1700000000; // Example UNIX timestamp
+const hsv = timestampToHSV(timestamp);
+console.log(`HSV(${hsv.h.toFixed(2)}, ${(hsv.s * 100).toFixed(2)}%, ${(hsv.v * 100).toFixed(2)}%)`);
 ```

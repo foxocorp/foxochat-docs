@@ -12,7 +12,9 @@ const nextConfig = {
 }
 
 const withNextra = nextra({
-    latex: true,
+    latex: {
+        renderer: "mathjax"
+    },
     search: {
         codeblocks: false
     }

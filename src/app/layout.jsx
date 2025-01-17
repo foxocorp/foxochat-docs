@@ -36,6 +36,7 @@ export default async function RootLayout({ children }) {
             editLink={null}
             feedback={{ content: null }}
             navigation={false}
+            lastUpdated={<span></span>}
         >
             {children}
         </Layout>

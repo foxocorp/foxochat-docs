@@ -2,10 +2,9 @@ import { Footer, Layout, Navbar } from 'nextra-theme-docs'
 import { Head } from 'nextra/components'
 import { getPageMap } from 'nextra/page-map'
 import 'nextra-theme-docs/style.css'
-import { Metadata } from "next";
 import React from "react";
 
-export const metadata: Metadata = {
+export const metadata = {
     title: "Foxogram Docs",
     description: "Foxogram Developer Documentation",
 };
@@ -13,7 +12,7 @@ export const metadata: Metadata = {
 const navbar = <Navbar logo={<b>Foxogram Docs</b>} />
 const footer = <Footer>MIT {new Date().getFullYear()} © FoxoCorp.</Footer>
 
-export default async function RootLayout({ children }: { children: React.ReactNode }) {
+export default async function RootLayout({ children }) {
     return (
         <html
             lang="en"

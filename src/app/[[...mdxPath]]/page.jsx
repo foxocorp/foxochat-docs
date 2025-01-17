@@ -1,6 +1,3 @@
-// eslint-disable-next-line @typescript-eslint/ban-ts-comment
-// @ts-nocheck
-
 import { generateStaticParamsFor, importPage } from 'nextra/pages'
 import { useMDXComponents } from '@/mdx-components'
 

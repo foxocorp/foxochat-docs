@@ -4,7 +4,7 @@ import "./SwaggerDark.css"
 
 const css = `.nextra-toc { display: none; }`
 
-export default function ApiReference() {
+export default function Reference() {
     return (
         <>
             <style>{css}</style>

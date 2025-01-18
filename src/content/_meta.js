@@ -1,5 +1,5 @@
 export default {
-    "api-reference": {
+    "reference": {
         theme: {
             toc: false
         }

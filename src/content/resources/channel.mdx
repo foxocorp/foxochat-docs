@@ -1,0 +1,22 @@
+# Channel
+
+## Channel object
+
+| Field         | Type                      | Description |
+|---------------|---------------------------|-------------|
+| id            | long                      |             |
+| display_name  | string                    |             |
+| name          | string                    |             |
+| icon          | string                    |             |
+| type          | integer                   |             |
+| owner         | [user](user) object       |             |
+| created_at    | timestamp                 |             |
+| last_message? | [message](message) object |             |
+
+## Channel types
+
+| Value | Type    | Description                             |
+|-------|---------|-----------------------------------------|
+| `1`   | DM      | a direct message between users          |
+| `2`   | GROUP   | a direct message between multiple users |
+| `3`   | CHANNEL | a channel that users can follow         |

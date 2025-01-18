@@ -1,0 +1,30 @@
+# User
+
+## User object
+
+| Field        | Type                                | Description |
+|--------------|-------------------------------------|-------------|
+| id           | long                                |             |
+| avatar       | string                              |             |
+| display_name | string                              |             |
+| username     | string                              |             |
+| email?       | string                              |             |
+| channels?    | array of [channel](channel) objects |             |
+| flags        | long                                |             |
+| type         | long                                |             |
+| created_at   | timestamp                           |             |
+
+## User types
+
+| Value | Type |
+|-------|------|
+| 1     | USER |
+| 2     | BOT  |
+
+## User flags
+
+| Value        | Flag                  | Description                      |
+|--------------|-----------------------|----------------------------------|
+| `1 << 0` (1) | AWAITING_CONFIRMATION | User wait for email confirmation |
+| `1 << 1` (2) | EMAIL_VERIFIED        | User has a verified email        |
+| `1 << 2` (4) | DISABLED              | User disabled                    |

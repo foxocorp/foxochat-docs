@@ -58,19 +58,28 @@
 }
 ```
 
-## Send events
+## Examples
+
+### Send events
 
 **Identify**
 ```json
 {
     "op": 1,
     "d": {
-        "token": ""
+        "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhIjowfQ.mpOO0N5hjaKrSl8EK16aFxSb_pqOUXVCQLNEt3-JBWg"
     }
 }
 ```
 
-## Receive events
+**Heartbeat**
+```json
+{
+    "op": 3
+}
+```
+
+### Receive events
 
 **Hello**
 ```json
@@ -82,19 +91,25 @@
 }
 ```
 
-## Dispatch events
+**Heartbeat ACK**
+```json
+{
+    "op": 4
+}
+```
+
+### Dispatch events
 
 **Message create**
 ```json
 {
     "op": 0,
-    "d": {
-        // Message object see in docs.foxogram.su
-    },
-    "s": 0,
+    "d": {},
+    "s": 42,
     "t": "MESSAGE_CREATE"
 }
 ```
+`d` type of [message](resources/message) object
 
 ## Connection lifecycle
 

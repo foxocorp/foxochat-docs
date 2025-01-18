@@ -4,11 +4,11 @@ import "./SwaggerDark.css"
 
 const css = `.nextra-toc { display: none; }`
 
-export default function Reference() {
+export default function Reference({ url }) {
     return (
         <>
             <style>{css}</style>
-            <SwaggerUI url="https://api.dev.foxogram.su/v3/api-docs"/>
+            <SwaggerUI url={url}/>
         </>
     )
 }

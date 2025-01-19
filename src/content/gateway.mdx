@@ -86,10 +86,12 @@
 {
     "op": 2,
     "d": {
-        "heartbeat_interval": 30000
+        "heartbeat_interval": 30
     }
 }
 ```
+
+`heartbeat_interval` value in seconds
 
 **Heartbeat ACK**
 ```json
@@ -109,6 +111,7 @@
     "t": "MESSAGE_CREATE"
 }
 ```
+
 `d` type of [message](resources/message) object
 
 ## Connection lifecycle

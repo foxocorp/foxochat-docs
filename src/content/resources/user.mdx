@@ -2,24 +2,17 @@
 
 ## User object
 
-| Field        | Type                                | Description                                                   |
-|--------------|-------------------------------------|---------------------------------------------------------------|
-| id           | long                                |                                                               |
-| avatar       | string                              |                                                               |
-| display_name | string                              |                                                               |
-| username     | string                              | username in lowercase, special characters `-` and `_` allowed |
-| email?       | string                              |                                                               |
-| channels?    | array of [channel](channel) objects |                                                               |
-| flags        | long                                |                                                               |
-| type         | integer                             |                                                               |
-| created_at   | timestamp                           |                                                               |
-
-## User types
-
-| Value | Type |
-|-------|------|
-| 1     | USER |
-| 2     | BOT  |
+| Field        | Type                                               | Description                                                   |
+|--------------|----------------------------------------------------|---------------------------------------------------------------|
+| id           | long                                               |                                                               |
+| avatar       | string                                             |                                                               |
+| display_name | string                                             |                                                               |
+| username     | string                                             | username in lowercase, special characters `-` and `_` allowed |
+| email?       | string                                             | not null only in GET and PATCH `/users/@me`                   |
+| channels?    | array of [channel](channel#channel-object) objects | not null only in GET and PATCH `/users/@me`                   |
+| flags        | long                                               | [user flags](user#user-flags)                                 |
+| type         | integer                                            | [user type](user#user-types)                                  |
+| created_at   | timestamp                                          |                                                               |
 
 ## User flags
 
@@ -28,3 +21,10 @@
 | `1 << 0` (1) | AWAITING_CONFIRMATION | User wait for email confirmation |
 | `1 << 1` (2) | EMAIL_VERIFIED        | User has a verified email        |
 | `1 << 2` (4) | DISABLED              | User disabled                    |
+
+## User types
+
+| Value | Type |
+|-------|------|
+| 1     | USER |
+| 2     | BOT  |

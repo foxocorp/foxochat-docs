@@ -2,17 +2,17 @@
 
 ## Channel object
 
-| Field         | Type                      | Description                                                       |
-|---------------|---------------------------|-------------------------------------------------------------------|
-| id            | long                      |                                                                   |
-| display_name  | string                    |                                                                   |
-| name          | string                    | channel name in lowercase, special characters `-` and `_` allowed |
-| icon          | string                    |                                                                   |
-| type          | integer                   |                                                                   |
-| member_count  | integer                   |                                                                   |
-| owner         | [user](user) object       |                                                                   |
-| created_at    | timestamp                 |                                                                   |
-| last_message? | [message](message) object |                                                                   |
+| Field         | Type                                     | Description                                                       |
+|---------------|------------------------------------------|-------------------------------------------------------------------|
+| id            | long                                     |                                                                   |
+| display_name  | string                                   |                                                                   |
+| name          | string                                   | channel name in lowercase, special characters `-` and `_` allowed |
+| icon          | string                                   |                                                                   |
+| type          | integer                                  | [channel type](channel#channel-types)                             |
+| member_count  | integer                                  |                                                                   |
+| owner         | [user](user#user-object) object          |                                                                   |
+| created_at    | timestamp                                |                                                                   |
+| last_message? | [message](message#message-object) object | not null only in GET `/users/@me/channels`                        |
 
 ## Channel types
 

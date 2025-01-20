@@ -2,13 +2,13 @@
 
 ## Member object
 
-| Field       | Type                      | Description |
-|-------------|---------------------------|-------------|
-| id          | long                      |             |
-| user        | [user](user) object       |             |
-| channel?    | [channel](channel) object |             |
-| permissions | long                      |             |
-| joined_at   | timestamp                 |             |
+| Field       | Type                                     | Description                                                                                   |
+|-------------|------------------------------------------|-----------------------------------------------------------------------------------------------|
+| id          | long                                     |                                                                                               |
+| user        | [user](user#user-object) object          |                                                                                               |
+| channel?    | [channel](channel#channel-object) object | not null only in GET `/channels/{id}/members/{memberId}` and PUT `/channels/{id}/members/@me` |
+| permissions | long                                     | [member permissions](member#member-permissions)                                               |
+| joined_at   | timestamp                                |                                                                                               |
 
 ## Member permissions
 

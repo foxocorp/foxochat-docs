@@ -1,7 +1,7 @@
-import { Layout, Navbar } from 'nextra-theme-docs'
-import { Head } from 'nextra/components'
-import { getPageMap } from 'nextra/page-map'
-import 'nextra-theme-docs/style.css'
+import { Layout, Navbar } from "nextra-theme-docs"
+import { Head } from "nextra/components"
+import { getPageMap } from "nextra/page-map"
+import "nextra-theme-docs/style.css"
 import React from "react";
 
 export const metadata = {
@@ -9,7 +9,7 @@ export const metadata = {
     description: "Foxogram Developer Documentation",
 };
 
-const navbar = <Navbar logo={<b>Foxogram Docs</b>} />
+const navbar = <Navbar logo={<b>Foxogram Docs</b>}/>
 
 export default async function RootLayout({ children }) {
     return (

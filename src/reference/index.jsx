@@ -2,7 +2,7 @@ import SwaggerUI from "swagger-ui-react"
 import "swagger-ui-react/swagger-ui.css"
 import "./SwaggerDark.css"
 
-const css = `.nextra-toc { display: none; }`
+const css = ".nextra-toc { display: none; }"
 
 export default function Reference({ url }) {
     return (

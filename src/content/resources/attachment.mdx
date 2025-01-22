@@ -1,0 +1,16 @@
+# Attachment (Draft)
+
+## Attachment object
+
+| Field        | Type   | Description                                                             |
+|--------------|--------|-------------------------------------------------------------------------|
+| hash         | string |                                                                         |
+| content_type | string | the attachment's [media type](https://en.wikipedia.org/wiki/Media_type) |
+| filename     | string |                                                                         |
+| flags        | long   | [attachment flags](attachment#attachment-flags)                         |
+
+## Attachment flags
+
+| Value        | Flag    | Description                  |
+|--------------|---------|------------------------------|
+| `1 << 0` (1) | SPOILER | This attachment is a spoiler |

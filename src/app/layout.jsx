@@ -1,8 +1,8 @@
-import { Layout, Navbar } from "nextra-theme-docs"
+import {LastUpdated, Layout, Navbar} from "nextra-theme-docs"
 import { Head } from "nextra/components"
 import { getPageMap } from "nextra/page-map"
 import "nextra-theme-docs/style.css"
-import React from "react";
+import React, {Fragment} from "react";
 
 export const metadata = {
     title: "Foxogram Docs",
@@ -36,7 +36,6 @@ export default async function RootLayout({ children }) {
             editLink={null}
             feedback={{ content: null }}
             navigation={false}
-            lastUpdated={<span></span>}
         >
             {children}
         </Layout>

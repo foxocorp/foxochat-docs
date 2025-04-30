@@ -4,11 +4,11 @@ import "./SwaggerDark.css"
 
 const css = ".nextra-toc { display: none; }"
 
-export default function Reference({ url }) {
+export default function Swagger({ url }) {
     return (
         <>
             <style>{css}</style>
-            <SwaggerUI url={url}/>
+            <SwaggerUI url={url} />
         </>
     )
 }

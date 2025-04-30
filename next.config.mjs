@@ -3,7 +3,7 @@ import nextra from "nextra";
 /**
  * @type {import('next').NextConfig}
  */
-const nextConfig = {
+const config = {
     output: "export",
     images: {
         unoptimized: true
@@ -20,4 +20,4 @@ const withNextra = nextra({
     }
 })
 
-export default withNextra(nextConfig);
+export default withNextra(config);

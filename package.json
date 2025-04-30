@@ -10,21 +10,22 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@theguild/remark-mermaid": "^0.2.0",
-    "next": "15.2.4",
+    "@theguild/remark-mermaid": "^0.3.0",
+    "next": "^15.3.1",
     "nextra": "^4.2.17",
     "nextra-theme-docs": "^4.2.17",
     "pagefind": "^1.3.0",
-    "react": "^18.3.1",
-    "react-dom": "^18.3.1",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
     "swagger-ui-react": "^5.21.0"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3.3.1",
     "eslint": "^9.25.1",
-    "eslint-config-next": "15.1.4"
+    "eslint-config-next": "15.3.1"
   },
   "scarfSettings": {
     "enabled": false
-  }
+  },
+  "packageManager": "pnpm@10.10.0+sha512.d615db246fe70f25dcfea6d8d73dee782ce23e2245e3c4f6f888249fb568149318637dca73c2c5c8ef2a4ca0d5657fb9567188bfab47f566d1ee6ce987815c39"
 }

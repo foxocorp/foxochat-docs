@@ -9,10 +9,12 @@
 | name          | string                                            | channel name in lowercase, special characters `-` and `_` allowed |
 | icon          | [attachment](attachment#attachment-object) object |                                                                   |
 | type          | integer                                           | [channel type](channel#channel-types)                             |
+| flags         | integer                                           |                                                                   |
 | member_count  | integer                                           |                                                                   |
 | owner         | [user](user#user-object) object                   |                                                                   |
 | created_at    | timestamp                                         |                                                                   |
 | last_message? | [message](message#message-object) object          | not null only in GET `/users/@me/channels`                        |
+| public        | boolean                                           |                                                                   |
 
 ## Channel types
 
@@ -21,3 +23,10 @@
 | `1`   | DM      | a direct message between users          |
 | `2`   | GROUP   | a direct message between multiple users |
 | `3`   | CHANNEL | a channel that users can follow         |
+
+## Channel flags
+
+| Value        | Flag    |
+|--------------|---------|
+| `1 << 0` (1) | PUBLIC  |
+| `1 << 1` (2) | BLOCKED |

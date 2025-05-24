@@ -2,17 +2,26 @@
 
 ## User object
 
-| Field        | Type                                               | Description                                                   |
-|--------------|----------------------------------------------------|---------------------------------------------------------------|
-| id           | long                                               |                                                               |
-| avatar       | [attachment](attachment#attachment-object) object  |                                                               |
-| display_name | string                                             |                                                               |
-| username     | string                                             | username in lowercase, special characters `-` and `_` allowed |
-| email?       | string                                             | not null only in GET and PATCH `/users/@me`                   |
-| channels?    | array of [channel](channel#channel-object) objects | not null only in GET and PATCH `/users/@me`                   |
-| flags        | long                                               | [user flags](user#user-flags)                                 |
-| type         | integer                                            | [user type](user#user-types)                                  |
-| created_at   | timestamp                                          |                                                               |
+| Field             | Type                                               | Description                                                   |
+|-------------------|----------------------------------------------------|---------------------------------------------------------------|
+| id                | long                                               |                                                               |
+| avatar            | [attachment](attachment#attachment-object) object  |                                                               |
+| display_name      | string                                             |                                                               |
+| username          | string                                             | username in lowercase, special characters `-` and `_` allowed |
+| email?            | string                                             | not null only in GET and PATCH `/users/@me`                   |
+| channels?         | array of [channel](channel#channel-object) objects | not null only in GET and PATCH `/users/@me`                   |
+| status            | integer                                            | [user status](user#user-statuses)                             |
+| status_updated_at | timestamp                                          |                                                               |
+| flags             | long                                               | [user flags](user#user-flags)                                 |
+| type              | integer                                            | [user type](user#user-types)                                  |
+| created_at        | timestamp                                          |                                                               |
+
+## User statuses
+
+| Value | Type    |
+|-------|---------|
+| 1     | ONLINE  |
+| 2     | OFFLINE |
 
 ## User flags
 

@@ -26,6 +26,7 @@
 - `USER_UPDATE`
 - `CONTACT_ADD`
 - `CONTACT_DELETE`
+- `TYPING_START`
 
 ## Error codes
 
@@ -82,6 +83,16 @@
 }
 ```
 
+**Typing start**
+```json
+{
+  "op": 0,
+  "d": {
+    "channel_id": 1
+  }
+}
+```
+
 ### Receive events
 
 **Hello**
@@ -103,7 +114,28 @@
 }
 ```
 
-### Dispatch events
+**User status update**
+```json
+{
+  "op": 0,
+  "d": {
+    "user_id": 1,
+    "status": 1
+  }
+}
+```
+
+**Typing start**
+```json
+{
+  "op": 0,
+  "d": {
+    "channel_id": 1,
+    "user_id": 1,
+    "timestamp": 1748375480000
+  }
+}
+```
 
 **Message create**
 ```json
@@ -115,7 +147,7 @@
 }
 ```
 
-`d` type of [message](resources/message) object
+`d` type of [message](resources/message#message-object) object
 
 ## Connection lifecycle
 

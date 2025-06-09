@@ -6,8 +6,8 @@ import React from "react";
 import LastUpdated from "@/components/lastUpdates";
 
 export const metadata = {
-    title: "Foxogram Docs",
-    description: "Foxogram Developer Documentation",
+    title: "FoxoCorp Docs",
+    description: "FoxoCorp Developer Documentation",
 };
 
 export default async function RootLayout({ children }) {
@@ -22,15 +22,15 @@ export default async function RootLayout({ children }) {
                 <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
                 <link rel="shortcut icon" href="/favicon.ico" />
                 <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
-                <meta name="apple-mobile-web-app-title" content="Foxogram Docs" />
+                <meta name="apple-mobile-web-app-title" content="FoxoCorp Docs" />
                 <link rel="manifest" href="/site.webmanifest" />
             </Head>
             <body>
                 <Layout
-                    navbar={<Navbar logo={<b>Foxogram Docs</b>} />}
+                    navbar={<Navbar logo={<b>FoxoCorp Docs</b>} />}
                     pageMap={await getPageMap()}
                     darkMode={true}
-                    docsRepositoryBase="https://github.com/foxocorp/foxogram-docs/tree/main/"
+                    docsRepositoryBase="https://github.com/foxocorp/docs/tree/main/"
                     footer={<span></span>}
                     editLink={null}
                     feedback={{ content: null }}

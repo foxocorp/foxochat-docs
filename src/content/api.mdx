@@ -11,6 +11,8 @@
 - `102` - Credentials duplicate
 - `103` - Credentials is invalid
 - `104` - Unauthorized
+- `105` - Contact already exist
+- `106` - Contact not found
 
 ### Channel errors
 - `200` - Not found
@@ -23,8 +25,11 @@
 
 ### Message errors
 - `400` - Not found
+- `401` - Cannot be empty
+- `402` - Attachment cannot be empty
+- `403` - Unknown attachment
 
-### Code errors (Email verification code)
+### OTP errors (Email verification code)
 - `500` - Is invalid
 - `501` - Expired
 - `502` - Wait to resend

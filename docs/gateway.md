@@ -148,20 +148,3 @@
 ```
 
 `d` type of [message](resources/message#message-object) object
-
-## Connection lifecycle
-
-```mermaid
-sequenceDiagram
-    autonumber
-    participant Client
-    participant Gateway
-    Client->>Gateway: Establish connection with Gateway
-    Client->>Gateway: Send Identify (op 1)
-    Gateway->>Client: Receive Hello (op 2)
-    loop Every heartbeat_interval
-        Client-->>Gateway: Send Heartbeat (op 3)
-        Gateway-->>Client: Receive Heartbeat ACK (op 4)
-    end
-    Gateway->>Client: Receive Dispatch (op 0)
-```

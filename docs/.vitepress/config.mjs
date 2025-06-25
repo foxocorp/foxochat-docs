@@ -18,6 +18,9 @@ export default defineConfig({
   title: 'FoxoCorp',
   description: 'FoxoCorp Developer Documentation',
   cleanUrls: true,
+  sitemap: {
+    hostname: 'https://docs.foxochat.app'
+  },
   head: [
     [
       'link',

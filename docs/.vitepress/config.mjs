@@ -15,8 +15,8 @@ const sidebarDev = useSidebar({
 })
 
 export default defineConfig({
-  title: 'FoxoCorp',
-  description: 'FoxoCorp Developer Documentation',
+  title: 'FoxoChat',
+  description: 'FoxoChat Developer Documentation',
   cleanUrls: true,
   sitemap: {
     hostname: 'https://docs.foxochat.app'
@@ -40,7 +40,7 @@ export default defineConfig({
     ],
     [
       'meta',
-      { name: 'apple-mobile-web-app-title', content: 'FoxoCorp Docs' }
+      { name: 'apple-mobile-web-app-title', content: 'FoxoChat Docs' }
     ],
     [
       'link',

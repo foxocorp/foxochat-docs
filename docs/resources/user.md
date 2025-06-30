@@ -20,8 +20,8 @@
 
 | Value | Type    |
 |-------|---------|
+| 0     | OFFLINE |
 | 1     | ONLINE  |
-| 2     | OFFLINE |
 
 ## User flags
 

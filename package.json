@@ -9,7 +9,7 @@
   },
   "devDependencies": {
     "vitepress": "^1.6.3",
-    "vitepress-openapi": "^0.0.3-alpha.86"
+    "vitepress-openapi": "^0.1.0"
   },
   "scarfSettings": {
     "enabled": false

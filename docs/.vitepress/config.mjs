@@ -58,6 +58,10 @@ export default defineConfig({
         link: '/gateway'
       },
       {
+        text: 'Media',
+        link: '/media'
+      },
+      {
         text: 'Resources',
         items: [
           {

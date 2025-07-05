@@ -48,6 +48,9 @@ export default defineConfig({
     ],
   ],
   themeConfig: {
+    search: {
+      provider: 'local'
+    },
     sidebar: [
       {
         text: 'API',
